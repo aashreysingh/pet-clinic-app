@@ -2,9 +2,11 @@ package com.bizarreDomain.springboot.petclinicapp.services.map;
 
 import com.bizarreDomain.springboot.petclinicapp.model.Pet;
 import com.bizarreDomain.springboot.petclinicapp.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
