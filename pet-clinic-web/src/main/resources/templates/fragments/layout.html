@@ -59,7 +59,14 @@
               </a>
             </li>
 
-            <li th:replace="::menuItem ('/vets.html','vets','veterinarians','th-list','Veterinarians')">
+            <li th:replace="::menuItem ('/owners','owners','all owners','th-list','All Owners')">
+              <a class="nav-link">
+                <span class="fa fa-search" aria-hidden="true"></span>
+                <span>Find owners</span>
+              </a>
+            </li>
+
+            <li th:replace="::menuItem ('/vets','vets','veterinarians','th-list','Veterinarians')">
               <a class="nav-link">
                 <span class="fa fa-th-list" aria-hidden="true"></span>
                 <span>Veterinarians</span>
